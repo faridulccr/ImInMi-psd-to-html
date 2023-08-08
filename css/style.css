@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    padding: 0 3%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(7, 121, 116);
+    white-space: nowrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.button {
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(4, 176, 167);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*===============================
+    header styles
+===============================*/
+#menu-container {
+    background-color: rgb(0, 179, 169);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    min-height: 100vh;
+    z-index: 999;
+    padding: 50px 50px 50px;
+    display: none;
+}
+
+#menu-container.show {
+    display: block;
+}
+
+#menu-container ul li {
+    text-align: right;
+}
+
+#menu-container ul li h2 {
+    color: #fff;
+    margin: 12px 0;
+}
+
+#menu-container ul li a {
+    color: #fff;
+    font: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+
+}
+
+#menu-container ul li a:hover {
+    color: rgb(226, 140, 47);
+}
+
+#menu-container ul li a:focus {
+    color: rgb(226, 140, 47);
+    font-weight: 900;
+}
+
+header .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(239, 239, 239);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 3%;
+    z-index: 999;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+}
+
+header ul li a:hover {
+    color: rgb(241, 85, 59);
+}
+
+.top-header nav ul li a {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -2px;
+}
+
+header a:focus {
+    font-weight: 700;
+}
+
+header .top-header .button-container {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+header #login-btn {
+    border: 1px solid rgb(4, 176, 167);
+    color: rgb(4, 176, 167);
+    padding: 5px 18px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+header .bottom-header {
+    position: fixed;
+    padding: 5px 0 5px 3%;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    column-gap: 20px;
+}
+
+header .bottom-header .moving-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.bottom-header .logo {
+    width: 100%;
+    height: 50px;
+}
+
+.bottom-header li a {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bottom-header li a:focus {
+    font-weight: 900;
+}
+
+.moving-element {
+    white-space: nowrap;
+    animation: moveRightToLeft 40s linear infinite;
+    width: fit-content;
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        margin-left: 95vw;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}

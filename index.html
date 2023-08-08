@@ -12,6 +12,9 @@
     </head>
     <body>
         <nav id="menu-container">
+            <button class="button" onclick="toggleNavbar()" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <ul>
                 <li><h2>Favorites</h2></li>
                 <li><a href="#">Deals</a></li>
@@ -54,14 +57,10 @@
                     </ul>
                 </nav>
                 <div class="button-container">
-                    <button class="button">
+                    <button onclick="togglePopup()" class="button">
                         <i class="fa-solid fa-heart"></i></button
                     ><a href="#">Sign Up</a> <a id="login-btn" href="#">Login</a
-                    ><button
-                        class="button"
-                        onclick="toggleNavbar()"
-                        id="menu-btn"
-                    >
+                    ><button class="button" onclick="toggleNavbar()">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
@@ -101,10 +100,2141 @@
             </div>
         </header>
 
+        <main>
+            <!-- pop up -->
+            <div id="popup-container">
+                <div class="popup">
+                    <button
+                        onclick="togglePopup()"
+                        class="button"
+                        id="close-popup"
+                    >
+                        X
+                    </button>
+                    <p class="title">Save your favorites now!</p>
+                    <p class="text">
+                        Log in or sign up to save your favorite products,
+                        brands, strains and dispensaries across all devices.
+                    </p>
+                    <div>
+                        <a href="#" class="button">Sign up</a>
+                        <a href="#" class="button">Log in</a>
+                    </div>
+                </div>
+            </div>
+            <!-- island 1 -->
+            <section class="island-sec">
+                <div class="content">
+                    <img src="./images/map.gif" alt="" />
+                    <a href="#">Oahu</a>
+                </div>
+                <div class="card-moving-container">
+                    <div class="card-container">
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- island 2 -->
+            <section class="island-sec">
+                <div class="content">
+                    <img src="./images/map.gif" alt="" />
+                    <a href="#">Maui</a>
+                </div>
+                <div class="card-moving-container">
+                    <div class="card-container">
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- island 3 -->
+            <section class="island-sec">
+                <div class="content">
+                    <img src="./images/map.gif" alt="" />
+                    <a href="#">Big Island</a>
+                </div>
+                <div class="card-moving-container">
+                    <div class="card-container">
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- island 4 -->
+            <section class="island-sec">
+                <div class="content">
+                    <img src="./images/map.gif" alt="" />
+                    <a href="#">Kauai</a>
+                </div>
+                <div class="card-moving-container">
+                    <div class="card-container">
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        Maui/East/Hana <br />
+                                        Restaurants <br />
+                                        12,398 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- island 4 -->
+            <section class="island-sec discover-sec">
+                <div class="content">
+                    <h2>Discover Hawaii Deals</h2>
+                    <a href="#">Oahu</a>
+                    <a href="#">Maui</a>
+                    <a href="#">Big Islam</a>
+                    <a href="#">Kauai</a>
+                </div>
+                <div class="card-moving-container">
+                    <div class="card-container">
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="togglePopup()" class="card">
+                            <img src="./images/food.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        Maui/South/Kihei <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-logo">
+                <img
+                    class="logo"
+                    src="./images/im-in-hi-logo-app-copy.png"
+                    alt=""
+                />
+                <p>
+                    I'm In Hawaii, <br />
+                    The Best of Hawaii, <span>In One Place.</span>
+                </p>
+            </div>
+            <ul>
+                <li><p>Island</p></li>
+                <li><a href="#">Oahu</a></li>
+                <li><a href="#">Maui</a></li>
+                <li><a href="#">Big Island</a></li>
+                <li><a href="#">Kauai</a></li>
+            </ul>
+            <ul>
+                <li><p>Deals</p></li>
+                <li><a href="#">Oahu</a></li>
+                <li><a href="#">Maui</a></li>
+                <li><a href="#">Big Island</a></li>
+                <li><a href="#">Kauai</a></li>
+            </ul>
+            <ul>
+                <li><p>Explore</p></li>
+                <li><a href="#">Adventures</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Car Rentals</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Bnb's</a></li>
+            </ul>
+            <ul style="margin-top:25px">
+                <li><a href="#">Beaches</a></li>
+                <li><a href="#">Secret Spots</a></li>
+                <li><a href="#">Shops</a></li>
+                <li><a href="#">Fun Rentals</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Vacation Planners</a></li>
+                <li><a href="#">Realtors</a></li>
+            </ul>
+            <ul style="margin-top:25px">
+                <li><a href="#">Travel Agents</a></li>
+                <li><a href="#">Shows</a></li>
+                <li><a href="#">Musicians</a></li>
+                <li><a href="#">Bars</a></li>
+                <li><a href="#">Breweries</a></li>
+                <li><a href="#">Wineries</a></li>
+                <li><a href="#">Distilleries</a></li>
+            </ul>
+            <div class="login-sec">
+                <ul>
+                    <li><p>Users</p></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign up</a></li>
+                    <li><p>Businesses</p></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+        </footer>
+
         <script>
             function toggleNavbar() {
                 const menuContainer = document.getElementById("menu-container");
                 menuContainer.classList.toggle("show");
+            }
+
+            function togglePopup() {
+                const popupContainer =
+                    document.getElementById("popup-container");
+                popupContainer.classList.toggle("show");
             }
         </script>
     </body>

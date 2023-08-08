@@ -42,15 +42,16 @@ img {
 ===============================*/
 #menu-container {
     background-color: rgb(0, 179, 169);
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 300px;
-    min-height: 100vh;
+    height: 100vh;
     z-index: 9999;
     padding: 10px 50px 50px;
     display: none;
     text-align: right;
+    overflow-y: auto;
 }
 
 #menu-container .button {
@@ -174,11 +175,11 @@ header .bottom-header .moving-container {
 
 .moving-element {
     white-space: nowrap;
-    animation: moveRightToLeft 40s linear infinite;
+    /* animation: moveRightToLeft 40s linear infinite; */
     width: fit-content;
 }
 
-@keyframes moveRightToLeft {
+/* @keyframes moveRightToLeft {
     0% {
         margin-left: 95vw;
     }
@@ -186,7 +187,7 @@ header .bottom-header .moving-container {
     100% {
         transform: translateX(-100%);
     }
-}
+} */
 
 /*=====================================
     main section styles
@@ -216,10 +217,11 @@ main #popup-container .popup {
     background-color: #fff;
     margin: 200px auto;
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:1025px) {
         margin: 100px auto;
         width: 80%;
     }
+
 }
 
 #popup-container .popup .title {
@@ -241,10 +243,20 @@ main #popup-container .popup {
     color: rgb(7, 121, 116);
     padding: 15px 40px;
     border-radius: 50px;
+    display: inline-block;
+
+    @media screen and (max-width:500px) {
+        padding: 15px 20px;
+    }
 }
 
-#popup-container .popup .button:first-child {
-    margin-right: 20px;
+#popup-container .popup .button:last-child {
+    margin-left: 20px;
+
+    @media screen and (max-width:500px) {
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
 
 #popup-container .popup .button:hover {
@@ -275,7 +287,7 @@ main {
 .island-sec.island-sec.discover-sec {
     margin-top: 10px;
     background-color: rgb(255, 97, 54);
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 .island-sec .content {
@@ -326,6 +338,7 @@ main {
     width: 99%;
     margin-left: auto;
     overflow: hidden;
+    overflow-x: auto;
 }
 
 .card-container {
@@ -333,6 +346,8 @@ main {
     column-gap: 15px;
     flex-wrap: nowrap;
     width: fit-content;
+    padding-right: 15px;
+    padding-bottom: 10px;
 }
 
 .card-container .card {
@@ -399,12 +414,11 @@ main {
     margin-bottom: 0;
 }
 
-
-.card-container {
+/* .card-container {
     animation: rightToLeft 50s linear infinite;
-}
+} */
 
-@keyframes rightToLeft {
+/* @keyframes rightToLeft {
     0% {
         margin-left: 100vw;
     }
@@ -412,7 +426,7 @@ main {
     100% {
         transform: translateX(-100%);
     }
-}
+} */
 
 /* ===============================
     footer styles

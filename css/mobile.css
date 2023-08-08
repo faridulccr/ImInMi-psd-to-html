@@ -3,6 +3,10 @@
         display: block;
     }
 
+    #menu-container .button {
+        right: 20px;
+    }
+
     .top-header nav {
         display: none;
     }
@@ -15,7 +19,6 @@
     header .bottom-header .logo {
         width: 80px;
     }
-
 
     .top-header .button-container a:nth-of-type(1) {
         left: 20px;
@@ -60,5 +63,9 @@
 
     footer>ul {
         display: none;
+    }
+
+    .bottom-footer {
+        text-align: center;
     }
 }

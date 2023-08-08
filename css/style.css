@@ -48,7 +48,7 @@ img {
     width: 300px;
     height: 100vh;
     z-index: 9999;
-    padding: 10px 50px 50px;
+    padding: 40px 50px 50px;
     display: none;
     text-align: right;
     overflow-y: auto;
@@ -57,6 +57,9 @@ img {
 #menu-container .button {
     color: #fff;
     background-color: rgb(0, 179, 169);
+    position: fixed;
+    top: 10px;
+    right: 40px;
 }
 
 #menu-container.show {
@@ -70,6 +73,7 @@ img {
 #menu-container ul li h2 {
     color: #fff;
     margin: 12px 0;
+    text-transform: uppercase;
 }
 
 #menu-container ul li a {
@@ -77,15 +81,32 @@ img {
     font: 20px;
     line-height: 1.5;
     font-weight: 500;
+    text-transform: uppercase;
+}
 
+#menu-container ul li #deals {
+    color: rgb(225, 140, 44);
+    font-weight: 700;
+    font-size: 26px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 6px;
+}
+
+#menu-container ul li #deals i {
+    border: 2px solid rgb(225, 140, 44);
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 3px 8px;
 }
 
 #menu-container ul li a:hover {
-    color: rgb(226, 140, 47);
+    color: rgb(225, 140, 44);
 }
 
 #menu-container ul li a:focus {
-    color: rgb(226, 140, 47);
+    color: rgb(225, 140, 44);
     font-weight: 900;
 }
 
@@ -162,6 +183,11 @@ header .bottom-header .logo {
     padding-left: 3%;
     padding-right: 15px;
     background-color: #fff;
+}
+
+.bottom-header .logo img {
+    width: 40px;
+    height: 50px;
 }
 
 header .bottom-header .moving-container {
@@ -450,7 +476,7 @@ main {
     footer styles
 ===================================*/
 footer {
-    padding: 70px 3% 20px;
+    padding: 70px 3% 10px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -502,6 +528,17 @@ footer .login-sec li p {
     color: #fff;
 }
 
+footer ul li #deals2 {
+    color: rgb(225, 140, 44);
+    font-weight: 700;
+}
+
 footer .login-sec li p:last-child {
     margin-top: 30px;
+}
+
+.bottom-footer {
+    color: rgb(1, 176, 168);
+    background-color: rgb(239, 239, 239);
+    padding: 10px 3% 30px;
 }

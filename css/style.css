@@ -158,9 +158,9 @@ header .bottom-header .logo {
     position: fixed;
     top: 55px;
     left: 0;
-    width: 110px;
+    width: 100px;
     padding-left: 3%;
-    padding-right: 20px;
+    padding-right: 15px;
     background-color: #fff;
 }
 

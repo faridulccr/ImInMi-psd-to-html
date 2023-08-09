@@ -59,7 +59,9 @@ img {
     background-color: rgb(0, 179, 169);
     position: fixed;
     top: 10px;
-    right: 40px;
+    padding-right: 5px;
+    border-radius: 0 5px 5px 0;
+    right: 3%;
 }
 
 #menu-container.show {
@@ -68,6 +70,28 @@ img {
 
 #menu-container ul li {
     text-align: right;
+}
+
+#menu-container ul li .signup-btn,
+#menu-container ul li .login-btn {
+    display: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 15px;
+    width: 100px;
+    margin-left: auto;
+    text-align: center;
+    text-transform: none;
+    transition: 0.5s;
+}
+
+#menu-container ul li .signup-btn:hover,
+#menu-container ul li .login-btn:hover {
+    color: rgb(4, 176, 167);
+    background-color: #fff;
 }
 
 #menu-container ul li h2 {
@@ -151,12 +175,22 @@ header .top-header .button-container {
     align-items: center;
 }
 
-header #login-btn {
+header .top-header .login-btn,
+header .top-header .signup-btn {
     border: 1px solid rgb(4, 176, 167);
     color: rgb(4, 176, 167);
-    padding: 5px 18px;
+    padding: 5px 0;
     border-radius: 30px;
     font-size: 15px;
+    width: 100px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+header .top-header .login-btn:hover,
+header .top-header .signup-btn:hover {
+    background-color: rgb(4, 176, 167);
+    color: #fff;
 }
 
 header .bottom-header {
@@ -288,10 +322,6 @@ main #popup-container .popup {
     padding: 15px 40px;
     border-radius: 50px;
     display: inline-block;
-
-    @media screen and (max-width:500px) {
-        padding: 15px 20px;
-    }
 }
 
 #popup-container .popup .button:last-child {

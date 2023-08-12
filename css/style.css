@@ -37,6 +37,9 @@ img {
     background: transparent;
 }
 
+
+
+
 /*===============================
     header styles
 ===============================*/
@@ -103,7 +106,7 @@ img {
 #menu-container ul li a {
     color: #fff;
     font: 20px;
-    line-height: 1.5;
+    line-height: 1.9;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -160,9 +163,9 @@ header ul li a:hover {
 }
 
 .top-header nav ul li a {
-    font-size: 25px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
 }
 
 header a:focus {
@@ -257,16 +260,6 @@ header .bottom-header .moving-container ul {
     width: fit-content;
 }
 
-/* @keyframes moveRightToLeft {
-    0% {
-        margin-left: 95vw;
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-} */
-
 /*=====================================
     main section styles
 =========================================*/
@@ -312,7 +305,7 @@ main #popup-container .popup {
 #popup-container .popup .text {
     padding: 10px 30px 0;
     font-size: 15px;
-    font-weight: 900;
+    font-weight: 500;
     margin-bottom: 40px;
 }
 
@@ -355,12 +348,12 @@ main {
 }
 
 .island-sec {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .island-sec.island-sec.discover-sec {
     margin-top: 50px;
-    background-color: rgb(255, 97, 54);
+    background-color: #00afa7;
     /* padding-bottom: 50px; */
 }
 
@@ -372,12 +365,19 @@ main {
 }
 
 .island-sec .content img {
+    width: 100px;
+    height: 100px;
+}
+
+.island-sec .content .welcome-island-img {
     width: 200px;
-    height: 200px;
+    height: auto;
+    margin-bottom: -5px;
+    display: block;
 }
 
 .island-sec .content a {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
 }
@@ -391,9 +391,8 @@ main {
     margin-bottom: 20px;
 }
 
-.island-sec.discover-sec .card-content h1 {
-    width: 260px;
-    margin-bottom: 20px;
+.island-sec .card-content h1 {
+    line-height: 0.9;
 }
 
 .island-sec.discover-sec .content h2 {
@@ -426,8 +425,8 @@ main {
 
 .card-container .card {
     position: relative;
-    width: 300px;
-    height: 250px;
+    width: 360px;
+    height: 480px;
     cursor: pointer;
 }
 
@@ -443,64 +442,42 @@ main {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    background: linear-gradient(to top, rgba(8, 121, 115, 0.8), rgba(8, 121, 115, 0.7), rgba(8, 121, 115, 0));
+    height: 100%;
+    background: linear-gradient(to top, rgba(8, 121, 115, 0.9), rgba(8, 121, 115, 0.79), rgba(8, 121, 115, 0), rgba(8, 121, 115, 0), rgba(8, 121, 115, 0), rgba(8, 121, 115, 0));
     /* border: 1px solid black; */
 }
 
-.island-sec.discover-sec .card-content {
-    height: 100%;
-}
-
 .card .card-content .text {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
     color: #fff;
 }
 
 .card .card-content .text h3 {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .card .card-content .text p {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .card .card-content .card-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
     display: flex;
     gap: 15px;
-    align-items: end;
 }
 
 .card-content .card-btn .button {
     color: #fff;
-    margin-bottom: -5px;
-    /* z-index: 99; */
+    font-size: 30px;
 }
 
-.discover-sec .card-content .card-btn {
-    margin-left: -25px;
+.card-content .card-btn .button:hover {
+    color: rgba(8, 121, 115, 0.9);
 }
-
-.discover-sec .card-content .card-btn .button {
-    font-size: 16px;
-    margin-bottom: 0;
-}
-
-/* .card-container {
-    animation: rightToLeft 50s linear infinite;
-} */
-
-/* @keyframes rightToLeft {
-    0% {
-        margin-left: 100vw;
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-} */
 
 /* ===============================
     footer styles

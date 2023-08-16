@@ -17,6 +17,7 @@ function slideMenu(event, id) {
     }
     menuContainer.style.transform = `translate(-${menuIndex * displayMenu}px)`;
 }
+
 function toggleNavbar() {
     const menuContainer = document.getElementById("menu-container");
     menuContainer.classList.toggle("show");

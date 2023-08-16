@@ -1,4 +1,22 @@
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1200px) {
+    .product-details-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-details-section .product-img img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .bottom-header .moving-container {
+        margin-left: 80px;
+    }
+
+    main {
+        margin: 130px 0 0;
+    }
 
     #menu-container ul li .signup-btn,
     #menu-container ul li .login-btn {
@@ -16,9 +34,51 @@
     #popup-container .popup .button {
         padding: 8px 20px;
     }
+
+    .island-sec.discover-sec .content {
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .island-sec.discover-sec .content h2 {
+        width: 100%;
+    }
+
+    #favorite-page .favorite-page-menu {
+        min-height: 100px;
+        padding: 20px 3%;
+    }
 }
 
+@media screen and (max-width: 686px) {
+    .product-details-section {
+        grid-template-columns: 1fr;
+    }
+
+    #favorite-page .favorite-page-menu {
+        min-height: 70px;
+        column-gap: 11px;
+    }
+
+    .profile-sec .product-details-section .product-content .empty-div {
+        display: none;
+    }
+
+    #favorite-page .favorite-page-menu a {
+        font-size: 14px;
+    }
+
+    #favorite-page .favorite-page-menu a i {
+        font-size: 27px;
+    }
+}
+
+
 @media screen and (max-width: 500px) {
+    main {
+        margin: 110px 0 0;
+    }
+
     #popup-container .popup .button {
         font-size: 20px;
     }
@@ -45,13 +105,12 @@
         width: 70px;
     }
 
-    .island-sec.discover-sec .content {
-        flex-wrap: wrap;
-        height: fit-content;
+    #favorite-page .favorite-page-menu {
+        min-height: 50px;
     }
 
-    .island-sec.discover-sec .content h2 {
-        width: 100%;
+    #favorite-page .favorite-page-menu a {
+        font-size: 12px;
     }
 
     footer {
@@ -65,11 +124,4 @@
     .bottom-footer {
         text-align: center;
     }
-}
-
-@media screen and (max-width: 400px) {
-    /* #menu-container .button {
-        right: 10px;
-        padding-right: 0;
-    } */
 }

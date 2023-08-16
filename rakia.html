@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/f78c19fc0c.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/mobile.css" />
+        <title>I'm In Hawaii - iminhawaii.com</title>
+    </head>
+    <body>
+        <nav id="menu-container">
+            <button class="button" onclick="toggleNavbar()" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul>
+                <li><a class="login-btn" href="#">Login</a></li>
+                <li><a href="#" class="signup-btn">Sign up</a></li>
+                <li>
+                    <h2>
+                        <i class="fa-regular fa-heart"></i
+                        ><a href="./favorite.html"> Favorites</a>
+                    </h2>
+                </li>
+                <li>
+                    <a id="deals" href="#"
+                        ><i class="fa-solid fa-dollar-sign"></i> Deals</a
+                    >
+                </li>
+                <li><h2>OAHU</h2></li>
+                <li><a href="#">honolulu/waikiki</a></li>
+                <li><a href="#">west</a></li>
+                <li><a href="#">east</a></li>
+                <li><a href="#">central</a></li>
+                <li><a href="#">north shore</a></li>
+                <li><h2>MAUI</h2></li>
+                <li><a href="#">central</a></li>
+                <li><a href="#">west</a></li>
+                <li><a href="#">hana/east</a></li>
+                <li><a href="#">upcountry</a></li>
+                <li><a href="#">north shore</a></li>
+                <li><a href="#">kihei/wailea/south</a></li>
+                <li><h2>BIG ISLAND</h2></li>
+                <li><a href="#">kailua-kona</a></li>
+                <li><a href="#">hilo</a></li>
+                <li><a href="#">kohala</a></li>
+                <li><a href="#">puna</a></li>
+                <li><a href="#">hamakua</a></li>
+                <li><a href="#">ka'u</a></li>
+                <li><h2>KAUAI</h2></li>
+                <li><a href="#">lihue</a></li>
+                <li><a href="#">south</a></li>
+                <li><a href="#">north</a></li>
+                <li><a href="#">west</a></li>
+                <li><a href="#">east</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="top-header">
+                <nav>
+                    <ul>
+                        <li><a href="#">Oahu</a></li>
+                        <li><a href="#">Maui</a></li>
+                        <li><a href="#">Big Island</a></li>
+                        <li><a href="#">Kauai</a></li>
+                    </ul>
+                </nav>
+                <div class="button-container">
+                    <button onclick="linkTo('/favorite.html')" class="button">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <a href="#" class="signup-btn">Sign Up</a>
+                    <a class="login-btn" href="#">Login</a>
+                    <button
+                        class="button"
+                        onclick="toggleNavbar()"
+                        style="padding-right: 5px"
+                    >
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bottom-header">
+                <span
+                    onclick="slideMenu(event,'menu-sec-slider')"
+                    class="left-slide-btn"
+                    id="prev"
+                >
+                    <i class="fa-solid fa-angle-left" id="prev2"></i>
+                </span>
+                <span
+                    onclick="slideMenu(event,'menu-sec-slider')"
+                    class="right-slide-btn"
+                >
+                    <i class="fa-solid fa-angle-right"></i>
+                </span>
+                <div class="logo">
+                    <a href="/"
+                        ><img src="./images/im-in-hi-logo-app-copy.png" alt=""
+                    /></a>
+                </div>
+                <div>
+                    <nav class="moving-container">
+                        <ul class="moving-element" id="menu-sec-slider">
+                            <li>
+                                <a href="#" style="color: rgb(225, 140, 44)"
+                                    >Deals</a
+                                >
+                            </li>
+                            <li><a href="#">Beaches</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Secret spots</a></li>
+                            <li><a href="#">Restaurants</a></li>
+                            <li><a href="#">Adventure</a></li>
+                            <li><a href="#">Car rentals</a></li>
+                            <li><a href="#">hotels</a></li>
+                            <li><a href="#">Bnb's</a></li>
+                            <li><a href="#">Beaches</a></li>
+                            <li><a href="#">Attractions</a></li>
+                            <li><a href="#">Retail Shops</a></li>
+                            <li><a href="#">Fun rentals</a></li>
+                            <li><a href="#">Health</a></li>
+                            <li><a href="#">Breweries</a></li>
+                            <li><a href="#">Wineries</a></li>
+                            <li><a href="#">Bars</a></li>
+                            <li><a href="#">Entertainment</a></li>
+                            <li><a href="#">Food Trucks</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Jewelry</a></li>
+                            <li><a href="#">Local Services</a></li>
+                            <li><a href="#">Farms</a></li>
+                            <li><a href="#">Online Shops</a></li>
+                            <li><a href="#">Photo/Video</a></li>
+                            <li><a href="#">Museums</a></li>
+                            <li><a href="#">Musicians</a></li>
+                            <li><a href="#">Shows</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Vacation Planners</a></li>
+                            <li><a href="#">Public Recreational</a></li>
+                            <li><a href="#">Travel Agents</a></li>
+                            <li><a href="#">Emergency</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- pop up -->
+            <div id="popup-container">
+                <div class="popup">
+                    <button
+                        onclick="togglePopup()"
+                        class="button"
+                        id="close-popup"
+                    >
+                        X
+                    </button>
+                    <p class="title">Save your favorites now!</p>
+                    <p class="text">
+                        Log in or create an account to save your favorites and
+                        organize your Hawaii trip!
+                    </p>
+                    <div>
+                        <a href="#" class="button">Sign up</a>
+                        <a href="#" class="button">Log in</a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="island-sec">
+                <div class="content">
+                    <img
+                        class="maui-page-logo"
+                        src="./images/maui.png"
+                        alt=""
+                    />
+                    <a href="#">MAUI/HANA</a>
+                </div>
+                <div class="product-details-section">
+                    <div class="product-img">
+                        <img src="./images/rakiacbd.jpg" alt="" />
+                    </div>
+                    <div class="product-content">
+                        <h1 class="title">Hana Bowls</h1>
+                        <h4 class="sub-title">Maul/Hana/East</h4>
+                        <p>
+                            Health/Restaurants <br />
+                            12,398 Views
+                        </p>
+                        <h4>
+                            240 8th St. <br />
+                            Hana, Hi 96713
+                        </h4>
+                        <p>
+                            Serving the beautiful town of Hana on Maui. Local
+                            favorite Aca bowls, smoothies and other delicious
+                            goodies!
+                        </p>
+                        <button onclick="togglePopup()" class="button">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <button onclick="togglePopup()" class="button">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                        </button>
+                    </div>
+                    <div class="product-contact">
+                        <ul class="text-link">
+                            <li><a href="#">(808) 280-1970</a></li>
+                            <li><a href="#">Visit Website</a></li>
+                            <li><a href="#">Directions</a></li>
+                        </ul>
+                        <ul class="media-link">
+                            <li>
+                                <a
+                                    href="https://www.facebook.com"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-facebook-f"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.instagram.com"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-youtube"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.twitter.com"
+                                    target="_blank"
+                                    ><i class="fa-brands fa-twitter"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hours-operation">
+                        <h3>Hours of Operation:</h3>
+                        <ul>
+                            <li>Monday: 9am - 12pm</li>
+                            <li>Tuesday: 9am - 12pm</li>
+                            <li>Wednesday: Closed</li>
+                            <li>Thursday: 9am - 12pm</li>
+                            <li>Friday: 9am - 12pm</li>
+                            <li>Saturday: 10am - 2pm</li>
+                            <li>Sunday: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-moving-container">
+                    <span
+                        onclick="leftSlide('hana-sec-slider')"
+                        class="left-slide-btn"
+                    >
+                        <i class="fa-solid fa-angle-left"></i>
+                    </span>
+                    <span
+                        onclick="rightSlide('hana-sec-slider')"
+                        class="right-slide-btn"
+                    >
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                    <div class="card-container" id="hana-sec-slider">
+                        <div class="card">
+                            <img src="./images/ritzmaui.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/junglezip.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/wai.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/kiheisurf.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/ufo.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="text-details">
+                    <h6>
+                        Aloha and welcome to our Acai Bowl truck located in the
+                        beautiful town of Hana!
+                    </h6>
+                    <br />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Donec odio. Quisque volutpat mattis eros. Nullam
+                        malesuada erat ut turpis. Suspendisse urna nibh viverra
+                        non semper suscipit posuere a pede Donec nec justo eget
+                        felis facilisis fermentum. Aliquam porttitor mauris sit
+                        amet orci. Aenean dignissim pellentesque felis Morbi in
+                        sem quis dui placerat ornare. Pellentesque odio nisi
+                        euismod in pharetra a ultricies in diam. Sed arcu. Cras
+                        consequat Praesent dapibus neque id cursus faucibus
+                        tortor neque egestas auguae eu vulputate magna eros eu
+                        erat. Aliquam erat volutpat. Nam dui mi tincidunt quis
+                        accumsan porttitor facilisis luctus metus Phasellus
+                        ultrices nulla quis nibh. Quisque a lectus. Donec
+                        consectetuer ligula vulputate sem tristique cursus. Nam
+                        nulla quam gravida non commodo a sodales sit amet nisi.
+                    </p>
+                    <br />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Donec odio. Quisque volutpat mattis eros. Nullam
+                        malesuada erat ut turpis. Suspendisse urna nibh viverra
+                        non semper suscipit posuere a pede Donec nec justo eget
+                        felis facilisis fermentum. Aliquam porttitor mauris sit
+                        amet orci. Aenean dignissim pellentesque felis Morbi in
+                        sem quis dui placerat ornare. Pellentesque odio nisi
+                        euismod in pharetra a ultricies in diam. Sed arcu. Cras
+                        consequat Praesent dapibus neque id cursus faucibus
+                        tortor neque egestas auguae eu vulputate magna eros eu
+                        erat. Aliquam erat
+                    </p>
+                </div>
+            </section>
+
+            <!-- island 4 -->
+            <section class="island-sec discover-sec">
+                <div class="content">
+                    <h2>Discover Hawaii Deals</h2>
+                    <a href="#">Oahu</a>
+                    <a href="#">Maui</a>
+                    <a href="#">Big Island</a>
+                    <a href="#">Kauai</a>
+                </div>
+                <div class="card-moving-container">
+                    <span
+                        onclick="leftSlide('discover-sec-slider')"
+                        class="left-slide-btn"
+                    >
+                        <i class="fa-solid fa-angle-left"></i>
+                    </span>
+                    <span
+                        onclick="rightSlide('discover-sec-slider')"
+                        class="right-slide-btn"
+                    >
+                        <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                    <div class="card-container" id="discover-sec-slider">
+                        <div class="card">
+                            <img src="./images/pacefoil.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>Buy 1 class, get the 2nd 50% off!</h1>
+                                    <h3>Pacific Efoil</h3>
+                                    <p>
+                                        <span> Big Island/Kailua-Kona</span
+                                        ><br />
+                                        Adventure/Fun Rentals<br />
+                                        324,910 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/wetwild.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        10% off groups 5 or more & 25% off
+                                        Military!
+                                    </h1>
+                                    <h3>Wet 'N' Wild</h3>
+                                    <p>
+                                        <span> Oahu/West</span><br />
+                                        Attractions/Kids<br />
+                                        123,019 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/lomi.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        1 hour Lomi Massage for $95, or hours
+                                        for $175
+                                    </h1>
+                                    <h3>Kauai Healing Massage</h3>
+                                    <p>
+                                        <span> Kauai/Lihue</span><br />
+                                        Local Services/Health<br />
+                                        293,002 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/exotics.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>Lamborghini Hurucan for $399/day</h1>
+                                    <h3>Honolulu Exotics</h3>
+                                    <p>
+                                        <span> Oahu/Honolulu-Waikiki</span
+                                        ><br />
+                                        Car Rentals<br />
+                                        310,644 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/alohax2.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy one Aloha Xchng shirt, get the 2nd
+                                        one 50% off + FREE SHIPPING!
+                                    </h1>
+                                    <h3>Aloha Exchange</h3>
+                                    <p>
+                                        <span> Kauai/Nort Shore</span><br />
+                                        Clothing Stores/Local Shops<br />
+                                        199,399 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hanabowlsdeal.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>10% off any Acai bowls!</h1>
+                                    <h3>Hana Bowls</h3>
+                                    <p>
+                                        <span> Maui/Hana</span><br />
+                                        Health/Restaurants<br />
+                                        438,129 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        <span> Maui/South/Kihei </span><br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        <span> Maui/South/Kihei </span><br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        <span> Maui/South/Kihei</span> <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        <span> Maui/South/Kihei</span> <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        <span> Maui/South/Kihei </span><br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        <span> Maui/South/Kihei</span> <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        <span> Maui/South/Kihei </span><br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        <span> Maui/South/Kihei</span> <br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        <span> Maui/South/Kihei </span><br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/hi.jpg" alt="" />
+                            <div class="card-content">
+                                <div class="text">
+                                    <h1>
+                                        Buy 2 beer shooters, get the 3rd one
+                                        half off!
+                                    </h1>
+                                    <h3>Maui Brewing Co.</h3>
+                                    <p>
+                                        <span> Maui/South/Kihei </span><br />
+                                        Brewery/Restaurants/Entertainment <br />
+                                        38,987 Views
+                                    </p>
+                                </div>
+                                <div class="card-btn">
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i
+                                            class="fa-solid fa-arrow-up-from-bracket"
+                                        ></i>
+                                    </button>
+                                    <button
+                                        onclick="togglePopup()"
+                                        class="button"
+                                    >
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-logo">
+                <a href="/"
+                    ><img class="logo" src="./images/iminhi.jpg" alt=""
+                /></a>
+
+                <p>
+                    I'm In Hawaii, <br />
+                    The Best of Hawaii, <span>In One Place.</span>
+                </p>
+            </div>
+            <ul>
+                <li><p>Island</p></li>
+                <li><a href="#">Oahu</a></li>
+                <li><a href="#">Maui</a></li>
+                <li><a href="#">Big Island</a></li>
+                <li><a href="#">Kauai</a></li>
+            </ul>
+            <ul>
+                <li><p id="deals2">Deals</p></li>
+                <li><a href="#">Oahu</a></li>
+                <li><a href="#">Maui</a></li>
+                <li><a href="#">Big Island</a></li>
+                <li><a href="#">Kauai</a></li>
+            </ul>
+            <ul>
+                <li><p>Explore</p></li>
+                <li><a href="#">Adventures</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Car Rentals</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Bnb's</a></li>
+            </ul>
+            <ul style="margin-top: 25px">
+                <li><a href="#">Beaches</a></li>
+                <li><a href="#">Secret Spots</a></li>
+                <li><a href="#">Shops</a></li>
+                <li><a href="#">Fun Rentals</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Vacation Planners</a></li>
+                <li><a href="#">Realtors</a></li>
+            </ul>
+            <ul style="margin-top: 25px">
+                <li><a href="#">Travel Agents</a></li>
+                <li><a href="#">Shows</a></li>
+                <li><a href="#">Musicians</a></li>
+                <li><a href="#">Bars</a></li>
+                <li><a href="#">Breweries</a></li>
+                <li><a href="#">Wineries</a></li>
+                <li><a href="#">Distilleries</a></li>
+            </ul>
+            <div class="login-sec">
+                <ul>
+                    <li><p>Users</p></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign up</a></li>
+                    <li><p>Businesses</p></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+        </footer>
+        <p class="bottom-footer">
+            2023 &copy; I'm In Hawaii, Inc. | All Rights Reserved | Terms &
+            Privacy | Support
+        </p>
+
+        <script>
+            let menuIndex = 0;
+            function slideMenu(event, id) {
+                const menuContainer = document.getElementById(id);
+                const displayMenu = window.innerWidth - 380;
+                // Update the carousel display to show the specified image
+
+                if (menuIndex === Math.ceil(3900 / displayMenu) - 1) {
+                    if (
+                        event.target.id == "prev" ||
+                        event.target.id == "prev2"
+                    ) {
+                        menuIndex--;
+                    } else menuIndex = 0;
+                } else {
+                    if (
+                        event.target.id == "prev" ||
+                        event.target.id == "prev2"
+                    ) {
+                        if (menuIndex != 0) {
+                            menuIndex--;
+                        } else return;
+                    } else menuIndex++;
+                }
+                menuContainer.style.transform = `translate(-${
+                    menuIndex * displayMenu
+                }px)`;
+            }
+            function toggleNavbar() {
+                const menuContainer = document.getElementById("menu-container");
+                menuContainer.classList.toggle("show");
+            }
+
+            function togglePopup() {
+                const popupContainer =
+                    document.getElementById("popup-container");
+                popupContainer.classList.toggle("show");
+            }
+
+            // sliding logic function
+            let sliderIndex = 1;
+            let sliderId = "";
+
+            // A function that updates the carousel display to show the specified image
+            function updateSlider(id) {
+                const slideContainer = document.getElementById(id);
+                const totalCards = slideContainer.children;
+                const displayImage = Math.floor(window.innerWidth / 375);
+                if (
+                    sliderIndex === Math.ceil(totalCards.length / displayImage)
+                ) {
+                    sliderIndex = 0;
+                } else if (sliderIndex < 0) {
+                    sliderIndex =
+                        Math.ceil(totalCards.length / displayImage) - 1;
+                }
+                // Update the carousel display to show the specified image
+                slideContainer.style.transform = `translate(-${
+                    sliderIndex * displayImage * 375
+                }px)`;
+            }
+
+            function leftSlide(id) {
+                if (sliderId !== id) {
+                    sliderId = id;
+                    sliderIndex = 1;
+                } else {
+                    sliderIndex -= 1;
+                }
+                updateSlider(id);
+            }
+
+            function rightSlide(id) {
+                if (sliderId !== id) {
+                    sliderId = id;
+                    sliderIndex = 1;
+                } else {
+                    sliderIndex += 1;
+                }
+                updateSlider(id);
+            }
+
+            function linkTo(pathname) {
+                window.location.assign(pathname);
+            }
+        </script>
+    </body>
+</html>
